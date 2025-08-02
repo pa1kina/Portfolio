@@ -1,22 +1,22 @@
-import { useState, useEffect } from 'react';
-import "./Navbar.scss"
+import { useState, useEffect } from "react";
+import "./Navbar.scss";
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'projects'];
+      const sections = ["home", "projects"];
       const scrollPosition = window.scrollY + 64;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -28,58 +28,63 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll();
-    
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className='navbar'>
-      <div className='logo-section'>
-        <img src='/kitty.png'className='logo'></img>
+    <div className={`navbar ${activeSection === 'projects' ? 'navbar-projects' : ''}`}>
+      <div className="logo-section">
+        <img src="/kitty.png" className="logo"></img>
         <p>PV</p>
       </div>
-     <ul>
+      <ul>
         <li>
-          <a 
-            className={`navbar-item ${activeSection === 'home' ? 'active' : ''}`}
-            onClick={() => scrollToSection('home')}
-            style={{ cursor: 'pointer' }}
+          <a
+            className={`navbar-item ${
+              activeSection === "home" ? "active" : ""
+            }`}
+            onClick={() => scrollToSection("home")}
+            style={{ cursor: "pointer" }}
           >
             home
           </a>
         </li>
         <li>
-          <a 
-            className={`navbar-item ${activeSection === 'projects' ? 'active' : ''}`}
-            onClick={() => scrollToSection('projects')}
-            style={{ cursor: 'pointer' }}
+          <a
+            className={`navbar-item ${
+              activeSection === "projects" ? "active" : ""
+            }`}
+            onClick={() => scrollToSection("projects")}
+            style={{ cursor: "pointer" }}
           >
             projects
           </a>
         </li>
         <li>
-          <a 
-            className={`navbar-item ${activeSection === 'resume' ? 'active' : ''}`}
-            onClick={() => scrollToSection('resume')}
-            style={{ cursor: 'pointer' }}
+          <a
+            className="navbar-item"
+            style={{ cursor: "pointer" }}
+            href="https://docs.google.com/document/d/1BrK54BfVXGfIXSPUjGkl5NZB4TS9Wppd2SrnyAFwklQ/edit?usp=sharing"
+            target="_blank"
           >
             resume
           </a>
         </li>
         <li>
-          <a 
-            className={`navbar-item ${activeSection === 'contact' ? 'active' : ''}`}
-            onClick={() => scrollToSection('contact')}
-            style={{ cursor: 'pointer' }}
+          <a
+            className="navbar-item"
+            href="/contact"
+            style={{ cursor: "pointer" }}
           >
             contact
           </a>
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

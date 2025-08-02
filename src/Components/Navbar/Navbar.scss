@@ -9,6 +9,7 @@
   z-index: 100;
   position: fixed;
   font-size: 1.1rem;
+  transition: 0.3s;
 }
 
 .logo-section {
@@ -49,5 +50,25 @@ li {
     transition: 0.3s;
     border: 1px solid rgba(256, 256, 256, 1);
     filter: drop-shadow(0 0 0.2rem rgba(256, 256, 256, 0.5));
+  }
+}
+
+.navbar-projects {
+  background-color: #cfcfcf; // change to your desired color
+  .logo-section p {
+    color: #454545;
+  }
+
+  .navbar-item {
+    transition: 0.3s;
+    color: #454545;
+    &:hover {
+      border: 1px solid #454545;
+      transition: 0.3s;
+      filter: drop-shadow(0 0 0.2rem rgba(69, 69, 69, 0.2));
+    }
+  }
+  .logo {
+    filter: brightness();
   }
 }
