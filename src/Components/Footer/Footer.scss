@@ -1,0 +1,17 @@
+.footer {
+  width: 100vw;
+  height: 64px;
+  padding: 0 1.5rem;
+  background-color: #CFCFCF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.footer > p {
+    color: #454545;
+    margin: auto;
+}

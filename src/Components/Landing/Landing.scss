@@ -1,0 +1,50 @@
+
+.landing {
+  background-color: #cfcfcf;
+  height: calc(100vh - 64px);
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.kapakana {
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.landing-img {
+  width: 50vw;
+  margin: 0;
+  display: flex;
+  justify-self: center;
+  rotate: 2.83deg;
+  filter: drop-shadow(3px 3px 0.4rem rgba(0, 0, 0, 0.13));
+  z-index: 3;
+  position: absolute;
+  
+}
+
+.background-letters {
+
+  .p {
+    top: -168px;
+    left: 65px;
+    position: absolute;
+    font-family: "Kapakana";
+    font-size: 70vw;
+    color: #cacaca;
+    z-index: 1;
+    rotate: -2.12deg;
+  }
+  .v {
+    top: 200px;
+    left: 850px;
+    position: absolute;
+    font-family: "Kapakana";
+    font-size: 70vw;
+    color: #cacaca;
+    z-index: 1;
+    rotate: -6.02deg;
+  }
+}

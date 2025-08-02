@@ -1,0 +1,53 @@
+.navbar {
+  width: 100vw;
+  height: 64px;
+  padding: 0 1.5rem;
+  background-color: #454545;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.logo-section {
+  height: 100%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  height: 100%;
+  filter: brightness(100);
+  transition: 0.2s;
+  &:active {
+    scale: 110%;
+    transition: 0.2s;
+  }
+}
+
+ul {
+  display: flex;
+  gap: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar-item {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 200px;
+  transition: 0.3s;
+  border: 1px solid rgba(256, 256, 256, 0);
+  &:hover {
+    transition: 0.3s;
+    border: 1px solid rgba(256, 256, 256, 1);
+    filter: drop-shadow(0 0 0.3rem rgba(256, 256, 256, 0.7));
+  }
+}
