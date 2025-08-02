@@ -1,6 +1,19 @@
 .projects {
     background-color: #454545;
-    height: 80vh;
     position: relative;
     z-index: 4;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 180px;
+}
+
+.projects-title {
+    color: white;
+
+    p {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
 }

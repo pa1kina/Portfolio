@@ -1,0 +1,44 @@
+[
+    {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A full-stack e-commerce solution built with React and Node.js",
+    "image": "/images/ecommerce-project.jpg",
+    "imageAlt": "E-commerce platform screenshot"
+  },
+  {
+    "id": 2,
+    "title": "Weather App",
+    "description": "Real-time weather application using OpenWeatherMap API",
+    "image": "/images/weather-app.jpg",
+    "imageAlt": "Weather application interface"
+  },
+  {
+    "id": 3,
+    "title": "Task Manager",
+    "description": "Productivity app with drag-and-drop functionality",
+    "image": "/images/task-manager.jpg",
+    "imageAlt": "Task management interface"
+  },
+  {
+    "id": 4,
+    "title": "Portfolio Website",
+    "description": "Responsive portfolio site showcasing web development skills",
+    "image": "/images/portfolio-site.jpg",
+    "imageAlt": "Portfolio website preview"
+  },
+  {
+    "id": 5,
+    "title": "Chat Application",
+    "description": "Real-time messaging app with Socket.io integration",
+    "image": "/images/chat-app.jpg",
+    "imageAlt": "Chat application interface"
+  },
+  {
+    "id": 6,
+    "title": "Data Visualization",
+    "description": "Interactive charts and graphs using D3.js library",
+    "image": "/images/data-viz.jpg",
+    "imageAlt": "Data visualization dashboard"
+  }
+]
