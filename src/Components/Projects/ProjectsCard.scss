@@ -1,18 +1,34 @@
 .project-card {
   width: 448px;
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
   padding: 0 20px;
+  transition: 0.2s;
+  filter: grayscale(100);
 
+  &:hover {
+    scale: 102%;
+    transition: 0.2s;
+    transform: rotate(-0.6deg);
+    filter: grayscale(0);
+  }
 }
 .project-card-content {
   display: flex;
-  gap: 48px;
+  gap: 16px;
   padding: 24px 0;
 }
 .project-image {
   background-color: black;
   width: 100%;
   height: 160px;
+  overflow: hidden;
+  transition: 0.3s;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 .punchholes {
@@ -30,10 +46,23 @@
   border-radius: 200px;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
+.project-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+
+  a {
+    color: #454545;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    &:hover {
+      color: #9f9f9f;
+      transition: 0.3s;
+    }
+  }
+  h3 {
+    padding-bottom: 6px;
+  }
 }

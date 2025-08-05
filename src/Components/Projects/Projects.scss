@@ -1,19 +1,83 @@
 .projects {
-    background-color: #454545;
-    position: relative;
-    z-index: 4;
-    display: flex;
-    flex-direction: column;
-    padding: 90px 180px;
+  background-color: #454545;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  box-shadow: 0 0 70px 70px #454545;
+}
+
+.projects::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-color: #454545;
+  z-index: -1;
+  filter: blur(10px);
+  border-radius: inherit;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0;
+  width: 926px;
 }
 
 .projects-title {
-    color: white;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 
+  p {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.projects-folder {
+  display: flex;
+  gap: 2rem;
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 0.5rem;
+    transition: 0.3s;
+
+    img {
+      height: 56px;
+      filter: grayscale(100);
+    }
     p {
-        font-size: 1.1rem;
+      align-self: center;
+      color: white;
+      font-size: 1rem;
     }
-    h1 {
-        font-size: 3rem;
+    &:hover {
+      filter: brightness(115%);
+      transition: 0.3s;
+      transform: translateY(-0.2rem);
     }
+  }
+}
+
+.projects-grid {
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: repeat(3, 1fr);
+  // gap: 2rem;
+  padding-top: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 30px;
 }

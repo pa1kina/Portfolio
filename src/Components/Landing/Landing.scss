@@ -1,7 +1,5 @@
-
 .landing {
-  background-color: #cfcfcf;
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -23,11 +21,14 @@
   filter: drop-shadow(3px 3px 0.4rem rgba(0, 0, 0, 0.13));
   z-index: 3;
   position: absolute;
-  
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    rotate: 2deg;
+  }
 }
 
 .background-letters {
-
   .p {
     top: -168px;
     left: 65px;

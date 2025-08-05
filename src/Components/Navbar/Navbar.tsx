@@ -73,15 +73,6 @@ const Navbar = () => {
             resume
           </a>
         </li>
-        <li>
-          <a
-            className="navbar-item"
-            href="/contact"
-            style={{ cursor: "pointer" }}
-          >
-            contact
-          </a>
-        </li>
       </ul>
     </div>
   );

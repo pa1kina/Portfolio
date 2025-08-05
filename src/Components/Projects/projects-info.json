@@ -1,44 +1,56 @@
 [
-    {
+  {
     "id": 1,
-    "title": "E-Commerce Platform",
-    "description": "A full-stack e-commerce solution built with React and Node.js",
-    "image": "/images/ecommerce-project.jpg",
-    "imageAlt": "E-commerce platform screenshot"
+    "title": "DesignCo UP-Grade 2025",
+    "description": "",
+    "image": "/images/upgrade-img.jpg",
+    "imageAlt": "UP-Grade image",
+    "linkName": "Website",
+    "projectLink": "https://upgrade25.ucsddesign.co/"
   },
   {
     "id": 2,
-    "title": "Weather App",
-    "description": "Real-time weather application using OpenWeatherMap API",
-    "image": "/images/weather-app.jpg",
-    "imageAlt": "Weather application interface"
+    "title": "DS3 Website Revamp",
+    "description": "",
+    "image": "/images/ds3.png",
+    "imageAlt": "",
+    "linkName": "Website",
+    "projectLink": "https://www.ds3ucsd.com/"
   },
   {
     "id": 3,
-    "title": "Task Manager",
-    "description": "Productivity app with drag-and-drop functionality",
-    "image": "/images/task-manager.jpg",
-    "imageAlt": "Task management interface"
+    "title": "Triton Ball Redesign",
+    "description": "",
+    "image": "/images/tritonball.png",
+    "imageAlt": "",
+    "linkName": "Website",
+    "projectLink": "https://www.tritonball.org/"
   },
   {
     "id": 4,
     "title": "Portfolio Website",
-    "description": "Responsive portfolio site showcasing web development skills",
-    "image": "/images/portfolio-site.jpg",
-    "imageAlt": "Portfolio website preview"
+    "description": "",
+    "image": "/images/portfoliowebsite.png",
+    "imageAlt": "Portfolio website preview",
+    "linkName": "Github",
+    "projectLink": "https://github.com/pa1kina/Portfolio"
   },
   {
     "id": 5,
-    "title": "Chat Application",
-    "description": "Real-time messaging app with Socket.io integration",
-    "image": "/images/chat-app.jpg",
-    "imageAlt": "Chat application interface"
+    "title": "Touch Designer Audio Visualizer",
+    "description": "",
+    "image": "/images/touchdesigner.png",
+    "imageAlt": "",
+    "linkName": "Video demonstration",
+    "projectLink": ""
   },
   {
     "id": 6,
-    "title": "Data Visualization",
-    "description": "Interactive charts and graphs using D3.js library",
-    "image": "/images/data-viz.jpg",
-    "imageAlt": "Data visualization dashboard"
+    "title": "Pure Data HipHop Generator",
+    "description": "",
+    "image": "/images/puredata.png",
+    "imageAlt": "",
+    "linkName": "Video demonstration",
+    "projectLink": ""
   }
 ]
