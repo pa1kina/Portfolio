@@ -2,6 +2,7 @@ import "./Projects.scss";
 import ProjectCard from "./ProjectCard";
 import projectData from "./projects-info.json";
 
+
 const Projects = () => {
   return (
     <div className="projects" id="projects">
@@ -16,10 +17,10 @@ const Projects = () => {
               <img src="/images/folder-icon-macos.webp"></img>
               <p>video works</p>
             </a>
-            {/* <a>
+            <a href="/design">
               <img src="/images/folder-icon-macos.webp"></img>
-              <p>painting & design</p>
-            </a> */}
+              <p>art & design</p>
+            </a>
           </div>
         </div>
         <div className="projects-grid">

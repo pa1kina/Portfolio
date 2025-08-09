@@ -2,34 +2,34 @@
   {
     "id": 1,
     "title": "DesignCo UP-Grade 2025",
-    "description": "",
+    "description": "Implementation of website for DesignCo's summer internship program. (React, SASS)",
     "image": "/images/upgrade-img.jpg",
     "imageAlt": "UP-Grade image",
-    "linkName": "Website",
+    "linkName": "UP-Grade website",
     "projectLink": "https://upgrade25.ucsddesign.co/"
   },
   {
     "id": 2,
     "title": "DS3 Website Revamp",
-    "description": "",
+    "description": "Website redesign & implementation as Software board member at Data Science Student Society. (Figma, React, Tailwind CSS)",
     "image": "/images/ds3.png",
-    "imageAlt": "",
-    "linkName": "Website",
+    "imageAlt": "Data Science Student Society visual",
+    "linkName": "DS3 website",
     "projectLink": "https://www.ds3ucsd.com/"
   },
   {
     "id": 3,
     "title": "Triton Ball Redesign",
-    "description": "",
+    "description": "Development of design elements for DS3's first consulting project with Triton Ball sports analytics club. (Figma)",
     "image": "/images/tritonball.png",
-    "imageAlt": "",
-    "linkName": "Website",
+    "imageAlt": "Sports analytics club website logo",
+    "linkName": "Triton Ball website",
     "projectLink": "https://www.tritonball.org/"
   },
   {
     "id": 4,
     "title": "Portfolio Website",
-    "description": "",
+    "description": "Solo project to sharpen design and web development skills. Designed in Figma and implemented with React & SASS.",
     "image": "/images/portfoliowebsite.png",
     "imageAlt": "Portfolio website preview",
     "linkName": "Github",
@@ -38,19 +38,19 @@
   {
     "id": 5,
     "title": "Touch Designer Audio Visualizer",
-    "description": "",
+    "description": "Interdisciplinary computing and the arts project to explore relationship between sound and color.",
     "image": "/images/touchdesigner.png",
-    "imageAlt": "",
+    "imageAlt": "Touch designer project",
     "linkName": "Video demonstration",
     "projectLink": ""
   },
   {
     "id": 6,
-    "title": "Pure Data HipHop Generator",
-    "description": "",
+    "title": "Pure Data Hip-Hop Generator",
+    "description": "Interdisciplinary computing and the arts project to approach a non-traditional way of producing music.",
     "image": "/images/puredata.png",
-    "imageAlt": "",
+    "imageAlt": "Pure Data project",
     "linkName": "Video demonstration",
-    "projectLink": ""
+    "projectLink": "https://drive.google.com/file/d/1iEV8Bh2X7w629FtQWDFwReV1iUty4zv4/view?usp=sharing"
   }
 ]

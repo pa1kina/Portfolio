@@ -1,0 +1,32 @@
+[
+    {   
+        "id": 1,
+        "imgSrc":"/DesignPg/bathroom.jpg",
+        "imgCaption":"Adobe Photoshop, 2022"
+    },
+    {
+        "id": 2,
+        "imgSrc":"/DesignPg/teddy.jpg",
+        "imgCaption":"Adobe Photoshop, 2022"
+    },
+    {
+        "id": 3,
+        "imgSrc":"/DesignPg/strawberry.jpg",
+        "imgCaption":"Procreate, 2023"
+    },
+    {
+        "id": 4,
+        "imgSrc":"/DesignPg/soojin.jpg",
+        "imgCaption":"Procreate, 2023"
+    },
+    {
+        "id": 5,
+        "imgSrc":"/DesignPg/lightpractice.jpg",
+        "imgCaption":"Procreate, 2023"
+    },
+    {
+        "id": 6,
+        "imgSrc":"/DesignPg/dani.jpg",
+        "imgCaption":"Procreate, 2024"
+    }
+]

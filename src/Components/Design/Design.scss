@@ -1,0 +1,52 @@
+.design {
+  width: 80vw;
+  margin: auto;
+  padding: calc(54px + 1rem) 0 1rem 0;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.design-title {
+  display: flex;
+  color: #454545;
+  flex-direction: column;
+  align-items: center;
+}
+
+.design-title-main {
+  margin: auto;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  img {
+    height: 3rem;
+  }
+}
+
+.artCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: 0.3s;
+
+  img {
+    display: flex;
+    height: 20rem;
+  }
+  p {
+    color: #454545;
+  }
+  &:hover {
+    transform: translateY(-0.2rem);
+    transition: 0.3s;
+  }
+}
+
+.design-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
