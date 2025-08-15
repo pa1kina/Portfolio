@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: column;
   padding: 90px 0;
+  align-items: center;
 }
 
 .projects-title {
@@ -39,9 +40,14 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+  width: 926px;
   @media (width < 480px) {
     padding: 0 2.3rem;
     align-items: center;
+    width: 100%;
+  }
+  @media (width < 960px) {
+    width: 100%;
   }
   p {
     font-size: 1.1rem;
