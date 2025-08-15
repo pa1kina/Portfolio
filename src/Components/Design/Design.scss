@@ -1,7 +1,7 @@
 .design {
-  width: 80vw;
+  width: 85vw;
   margin: auto;
-  padding: calc(54px + 1rem) 0 1rem 0;
+  padding: calc(54px + 1rem) 0 1.5rem ;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -19,8 +19,16 @@
   padding-top: 2rem;
   display: flex;
   align-items: center;
+  flex-direction: column;
   img {
     height: 3rem;
+    @media (width < 481px) {
+      align-self: center;
+    }
+  }
+  @media (width < 756px) {
+    text-align: center;
+    padding: 1rem 4rem 0 4rem;
   }
 }
 
@@ -29,7 +37,6 @@
   flex-direction: column;
   gap: 0.5rem;
   transition: 0.3s;
-
   img {
     display: flex;
     height: 20rem;

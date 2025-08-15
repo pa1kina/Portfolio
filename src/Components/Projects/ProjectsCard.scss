@@ -11,6 +11,12 @@
     transform: rotate(-0.6deg);
     filter: grayscale(0);
   }
+  @media (width < 759px) {
+    scale: 90%;
+    &:hover {
+      scale: 92%;
+    }
+  }
 }
 .project-card-content {
   display: flex;

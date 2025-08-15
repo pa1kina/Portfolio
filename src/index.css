@@ -1,13 +1,14 @@
 ::-webkit-scrollbar {
-  background: #454545;
+  background: rgba(red, green, blue, 0);
   width: 0.5rem;
+  
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(234, 234, 234);
+  background: #696969;
   border-radius: 200px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(217, 217, 217);
+  background: #595959;
 }

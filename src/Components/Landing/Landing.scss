@@ -3,7 +3,11 @@
   width: 100vw;
   margin: 0;
   padding: 0;
-  padding-top: 64px;
+  padding-top: 48px;
+  @media (width < 759px) {
+    padding-top: 15vw;
+    margin-bottom: 15vh;
+  }
 }
 
 .kapakana {
@@ -13,35 +17,65 @@
 }
 
 .landing-img {
-  width: 50vw;
-  margin: 0;
+  height: 94vh;
+  margin: auto;
   display: flex;
   justify-self: center;
   rotate: 2.83deg;
   filter: drop-shadow(3px 3px 0.4rem rgba(0, 0, 0, 0.13));
   z-index: 3;
   position: absolute;
+  @media (width < 759px) {
+    display: none;
+  }
+  @media (width > 1440px) {
+    margin: auto;
+  }
+}
+
+.landing-img-mobile {
+  height: 50rem;
+  display: flex;
+  justify-self: center;
+  rotate: 2.83deg;
+  filter: drop-shadow(3px 3px 0.4rem rgba(0, 0, 0, 0.13));
+  z-index: 3;
+  position: absolute;
+  @media (width > 759px) {
+    display: none;
+  }
+  @media (max-width: 480px) {
+    max-width: 90vw;
+    height: auto;
+    padding-top: 60px;
+  }
 }
 
 .background-letters {
+  font-size: 1000px;
+  z-index: 1;
+  color: #cacaca;
+  font-family: "Kapakana";
   .p {
-    top: -168px;
-    left: 65px;
+    left: 0;
     position: absolute;
-    font-family: "Kapakana";
-    font-size: 70vw;
-    color: #cacaca;
-    z-index: 1;
     rotate: -2.12deg;
+    top: -120px;
+    @media (width < 759px) {
+      font-size: 800px;
+      left: -90px;
+      top: -110px;
+    }
   }
   .v {
-    top: 200px;
-    left: 850px;
     position: absolute;
-    font-family: "Kapakana";
-    font-size: 70vw;
-    color: #cacaca;
-    z-index: 1;
+    right: 80px;
     rotate: -6.02deg;
+    bottom: -500px;
+    @media (width < 759px) {
+      font-size: 800px;
+      right: -90px;
+      bottom: -450px;
+    }
   }
 }

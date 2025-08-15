@@ -2,17 +2,23 @@
   width: 100vw;
   height: 56px;
   padding: 0 2rem;
-  background-color: #CFCFCF;
+  background-color: #cfcfcf;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
   position: relative;
   font-size: 1.1rem;
+  @media (width < 759px) {
+    height: 48px;
+  }
 }
 
 .footer > p {
-    color: #454545;
+  color: #454545;
+  @media (width < 759px) {
+    font-size: 1rem;
+  }
 }
 
 .icons {
@@ -27,7 +33,7 @@
     &:hover {
       opacity: 80%;
       transition: 0.3s;
-      scale: 110%;
+      scale: 108%;
     }
   }
 }

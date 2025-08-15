@@ -4,11 +4,10 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
-  const isHomePage = location.pathname === "/";
+  const isHomePage = location.pathname === "/" || location.pathname === "/home";
 
   const handleNavigation = (sectionId: string) => {
     if (isHomePage) {
@@ -20,11 +19,11 @@ const Navbar = () => {
     }
   };
 
-  const scrollToSection = (sectionId: string, smooth: boolean = true) => {
+  const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
-        behavior: smooth ? "smooth" : "instant",
+        behavior: "smooth",
         block: "start",
       });
     }
@@ -33,27 +32,8 @@ const Navbar = () => {
   useEffect(() => {
     // Handle initial load with hash (e.g., coming from /design to /#projects)
     if (isHomePage && location.hash) {
-      const sectionId = location.hash.replace("#", "");
-      // Use instant scroll and multiple attempts to ensure we get there
-      const scrollToTarget = () => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          // Scroll instantly to avoid showing the landing first
-          element.scrollIntoView({
-            behavior: "instant",
-            block: "start",
-          });
-          // Also set the active section immediately
-          setActiveSection(sectionId);
-        } else {
-          // If element not found, try again after a short delay
-          setTimeout(scrollToTarget, 50);
-        }
-      };
-
-      // Try immediately and also after a small delay
-      scrollToTarget();
-      setTimeout(scrollToTarget, 100);
+      const sectionId = location.hash.replace('#', '');
+      setTimeout(() => scrollToSection(sectionId), 100); // Small delay to ensure DOM is ready
     }
   }, [location, isHomePage]);
 
@@ -90,11 +70,7 @@ const Navbar = () => {
   }, [isHomePage]);
 
   return (
-    <div
-      className={`navbar ${
-        activeSection === "projects" ? "navbar-projects" : ""
-      }`}
-    >
+    <div className={`navbar ${activeSection === 'projects' ? 'navbar-projects' : ''}`}>
       <div className="logo-section">
         <img src="/kitty.png" className="logo" alt="Logo"></img>
         <p>PV</p>
