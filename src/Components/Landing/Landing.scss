@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   padding-top: 48px;
+  position: relative; // Add this to contain absolute children
+  overflow: hidden; // Prevent content from overflowing
   @media (width < 759px) {
     padding-top: 15vw;
     margin-bottom: 15vh;
@@ -18,10 +20,9 @@
 
 .landing-img {
   height: 94vh;
-  margin: auto;
-  display: flex;
-  justify-self: center;
-  rotate: 2.83deg;
+  left: 50%; // Center horizontally
+  top: 50%; // Center vertically
+  transform: translate(-50%, -50%) rotate(2.83deg); // Center and rotate
   filter: drop-shadow(3px 3px 0.4rem rgba(0, 0, 0, 0.13));
   z-index: 3;
   position: absolute;
@@ -35,9 +36,8 @@
 
 .landing-img-mobile {
   height: 50rem;
-  display: flex;
-  justify-self: center;
-  rotate: 2.83deg;
+  left: 50%; // Center horizontally
+  transform: translate(-50%, 0) rotate(2.83deg); // Center and rotate
   filter: drop-shadow(3px 3px 0.4rem rgba(0, 0, 0, 0.13));
   z-index: 3;
   position: absolute;

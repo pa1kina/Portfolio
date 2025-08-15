@@ -12,9 +12,9 @@
     filter: grayscale(0);
   }
   @media (width < 759px) {
-    scale: 90%;
+    scale: 80%;
     &:hover {
-      scale: 92%;
+      scale: 82%;
     }
   }
 }

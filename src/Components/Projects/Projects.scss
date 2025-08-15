@@ -4,8 +4,9 @@
   z-index: 4;
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 70px 70px #454545;
+  box-shadow: 0 0 60px 70px #454545;
   width: 100%;
+  overflow: hidden;
   @media (width < 759px) {
     padding: 0 4rem;
   }
@@ -31,7 +32,6 @@
   display: flex;
   flex-direction: column;
   padding: 90px 0;
-  width: 926px;
 }
 
 .projects-title {
@@ -40,7 +40,7 @@
   justify-content: space-between;
   padding: 1rem 0;
   @media (width < 480px) {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
   p {
     font-size: 1.1rem;
@@ -57,7 +57,7 @@
   display: flex;
   gap: 2rem;
   @media (width < 480px) {
-    gap: 1rem;
+    gap: 0.7rem;
   }
   a {
     display: flex;
@@ -80,7 +80,7 @@
       font-size: 1rem;
       text-align: center;
       @media (width < 759px) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
     &:hover {
@@ -100,6 +100,6 @@
   margin: auto;
   gap: 30px;
   @media (width < 759px) {
-    gap: 1rem;
+    gap: 0;
   }
 }
