@@ -5,6 +5,10 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
+  overflow-x: hidden;
+  @media (width < 756px) {
+    width: 90vw;
+  }
 }
 
 .design-title {
@@ -12,6 +16,7 @@
   color: #454545;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .design-title-main {
