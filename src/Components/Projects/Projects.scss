@@ -33,6 +33,9 @@
   flex-direction: column;
   padding: 90px 0;
   align-items: center;
+  @media (width < 759px) {
+    padding: 40px 0;
+  }
 }
 
 .projects-title {
@@ -48,6 +51,7 @@
   }
   @media (width < 960px) {
     width: 100%;
+    padding-top: 2rem;
   }
   p {
     font-size: 1.1rem;

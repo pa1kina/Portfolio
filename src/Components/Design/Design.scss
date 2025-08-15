@@ -48,6 +48,11 @@
     transform: translateY(-0.2rem);
     transition: 0.3s;
   }
+  @media (width < 759px) {
+    align-items: center;
+    max-width: 90vw;
+    scale: 90%;
+  }
 }
 
 .design-grid {

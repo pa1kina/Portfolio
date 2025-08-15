@@ -8,7 +8,7 @@
   overflow: hidden; // Prevent content from overflowing
   @media (width < 759px) {
     padding-top: 15vw;
-    height: 110vh;
+    height: 120vh;
   }
 }
 
@@ -71,11 +71,11 @@
     position: absolute;
     right: 80px;
     rotate: -6.02deg;
-    bottom: -500px;
+    bottom: -400px;
     @media (width < 759px) {
       font-size: 800px;
       right: -90px;
-      bottom: -450px;
+      bottom: -350px;
     }
   }
 }
