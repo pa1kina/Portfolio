@@ -1,0 +1,48 @@
+.footer {
+  width: 100vw;
+  height: 56px;
+  padding: 0 2rem;
+  background-color: #cfcfcf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  font-size: 1.1rem;
+  @media (width < 759px) {
+    height: 48px;
+  }
+}
+
+.footer > p {
+  color: #454545;
+  @media (width < 759px) {
+    font-size: 1rem;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #454545;
+    transition: 0.3s;
+    &:hover {
+      opacity: 80%;
+      transition: 0.3s;
+      scale: 108%;
+    }
+  }
+}
+
+.footer-heart {
+  transition: 0.3s;
+  &:hover {
+    color: white;
+    filter: drop-shadow(0 0 0.1rem white);
+    transition: 0.3s;
+  }
+}
