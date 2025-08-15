@@ -14,6 +14,9 @@
   @media (width < 759px) {
     height: 48px;
   }
+  .button {
+    z-index: 1000;
+  }
 }
 
 .logo-section {
@@ -34,17 +37,21 @@
   }
 }
 
-ul {
+// Desktop Navigation
+.desktop-nav {
   display: flex;
   gap: 2rem;
   margin-left: 10px;
-  @media (width < 759px) {
+
+  @media (max-width: 768px) {
     display: none;
   }
 }
 
-li {
-  list-style: none;
+ul {
+  li {
+    list-style: none;
+  }
 }
 
 .navbar-item {
@@ -78,5 +85,115 @@ li {
   }
   .logo {
     filter: brightness();
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 130;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
+  .hamburger-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+    transform-origin: 1px;
+  }
+
+  &.hamburger-active {
+    .hamburger-line {
+      &:first-child {
+        transform: rotate(45deg);
+        width: 105%;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+        width: 105%;
+      }
+    }
+  }
+  .projects-hamburger {
+    background-color: #454545;
+  }
+}
+
+.mobile-menu-overlay {
+  width: 100vw;
+  opacity: 95%;
+  background-color: #454545;
+  transition: 0.3s;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  margin-top: 48px;
+  z-index: 130;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+  animation: slideDown 0.3s ease-out forwards;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    animation: slideDown 0.5s ease-out forwards;
+  }
+  &.closing {
+    animation: slideUp 0.3s ease-out forwards;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: auto;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+}
+
+.mobile-nav-item {
+  z-index: 170;
+  color: white;
+  text-decoration: none;
+  padding: 0.45rem 1rem;
+  border-radius: 200px;
+  transition: 0.3s;
+  border: 1px solid rgba(256, 256, 256, 0);
+  &:hover {
+    transition: 0.3s;
+    border: 1px solid rgba(256, 256, 256, 1);
+    filter: drop-shadow(0 0 0.2rem rgba(256, 256, 256, 0.5));
   }
 }
