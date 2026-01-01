@@ -24,7 +24,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="projects-grid">
-          {projectData.map((project) => (
+          {[...projectData].reverse().map((project) => (
             <ProjectCard
               key={project.id}
               title={project.title}
