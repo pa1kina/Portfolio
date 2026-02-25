@@ -58,9 +58,9 @@
     "title": "DesignCo Stride 2025 Website",
     "description": "Implementation of website for DesignCo's annual career fair (Figma, React.js, SASS).",
     "image": "/images/stride.png",
-    "imageAlt": "UP-Grade image",
-    "linkName": "UP-Grade website",
-    "projectLink": "https://upgrade25.designatucsd.com/"
+    "imageAlt": "Stride image",
+    "linkName": "Stride website",
+    "projectLink": "https://stride25.designatucsd.com/"
   },
   {
     "id": 8,
