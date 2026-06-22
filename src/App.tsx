@@ -2,6 +2,8 @@ import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import Design from "./Components/Design/Design";
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/design" element={<Design />} />
+        <Analytics />
       </Routes>
     </>
   );
